@@ -6,6 +6,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'basicinfo.views.index', name='index'),
+    url(r'^list/$', 'basicinfo.views.getData', name='getData'),
     # url(r'^xmlparser/', include('xmlparser.foo.urls')),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
